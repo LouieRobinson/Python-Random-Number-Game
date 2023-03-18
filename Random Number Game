@@ -1,0 +1,26 @@
+import random
+import time
+
+l=['1','2','3'] #change this list to any number you want
+
+def main():
+    random.shuffle(l)
+    inp=input()
+    if inp == l[0]:
+        print('Well done, youve got it right! the answer was: ',l[0])
+        print('')
+    else:
+        print('wrong, answer the answer was: ',l[0])
+        print('')
+main()
+
+def pa():
+    while True:
+        time.sleep(2)
+        pa=input('do you want to play again? y/n')
+        if pa=='y':
+            main()
+        else:
+            print('bye')
+            break
+pa()
